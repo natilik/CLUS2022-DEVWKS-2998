@@ -1,0 +1,11 @@
+#
+# This file acts as a deployment descriptor and defines the scaling type and the runtime, handlers,
+# and other resource settings for a specific version of a service
+# https://cloud.google.com/appengine/docs/standard/python3/config/appref
+#
+
+runtime: python38
+
+handlers:
+- url: /.*
+  script: auto

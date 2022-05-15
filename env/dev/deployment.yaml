@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chuck-norris-app
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chuck-norris-app
+  template:
+    metadata:
+      labels:
+        app: chuck-norris-app
+    spec:
+      containers:
+      - image: maty0609/clus2022-chuck-app:latest
+        name: chuck-norris-app
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+      restartPolicy: Always
