@@ -107,3 +107,14 @@ Let’s check reconciliation
 `flux get kustomization -w`
 
 We can now check if the new version has been deployed in `prod`. Access port `8080` and you should see our new version 2.
+
+### Wrapping It Up
+
+In this workshop you've learned the basics of how to use Flux:
+
+- Install Flux
+- Bootstrap your cluster with Flux
+- Deploy the app with Flux according to GitOps best practices
+- Upgrade the app with Flux
+
+Arms with the above, you should be able to start managing your Kubernetes cluster with Flux. Hopefully you had fun, and find this enjoyable!
