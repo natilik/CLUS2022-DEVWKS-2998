@@ -5,9 +5,8 @@ metadata:
   namespace: dev
 spec:
   ports:
-  - nodePort: 31808
-    port: 8080
+  - port: 5002
     protocol: TCP
   selector:
     app: chuck-norris-app
-  type: NodePort
+  type: ClusterIP
