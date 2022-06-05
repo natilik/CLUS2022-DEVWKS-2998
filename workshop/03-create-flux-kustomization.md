@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 In this part you will perform the following tasks:
 
@@ -7,7 +7,7 @@ In this part you will perform the following tasks:
 - Deploy Chuck Norris app version 1 into dev and prod
 - Test Chuck Norris app
 
-### Create Flux Kustomization
+## Create Flux Kustomization
 
 The Kustomization custom resource represents a local set of Kubernetes resources (e.g. Kustomize overlay) that Flux is supposed to reconcile in the cluster.
 

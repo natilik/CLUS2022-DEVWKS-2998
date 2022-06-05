@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 In this part you will perform the following tasks:
 
@@ -19,7 +19,7 @@ Traditional tools like `kubectl` or `helm` have following challenges:
 - No single source for manifests (deployments, services, secrets etc.)
 - No change control or tracking on any changes to Kubernetes
 
-### Flux pre-requirements
+## Flux pre-requirements
 
 We have pre-built Kubernetes cluster for you. It is standard `kind` (Kubernetes in Docker) cluster. You will not going to be able to run another Google datacenter from this cluster but for today this is fully sufficient.
 
@@ -73,7 +73,7 @@ export GITHUB_USER=<your-username>
 
 ```
 
-### Install flux
+## Install Flux
 
 Now, let's bootstrap Flux on Kubernetes cluster. It is pretty straight forward.
 

@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 In this part you will perform the following tasks:
 
@@ -6,7 +6,7 @@ In this part you will perform the following tasks:
 - Deploy Chuck Norris app version 2 in prod
 
 
-### Deploying new version manually
+## Upgrading Chuck Norris App with Flux
 
 Let’s assume your developers would like to deploy new version of Chuck Norris app. The new version has been pushed by developers to Docker Hub container registry as `maty0609/clus2022-chuck-app:v2`
 
@@ -108,7 +108,7 @@ Let’s check reconciliation
 
 We can now check if the new version has been deployed in `prod`. Access port `8080` and you should see our new version 2.
 
-### Wrapping It Up
+## Wrapping It Up
 
 In this workshop you've learned the basics of how to use Flux:
 

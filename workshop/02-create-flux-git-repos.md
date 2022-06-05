@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 In this part you will perform the following tasks:
 
@@ -7,7 +7,7 @@ In this part you will perform the following tasks:
 - Check the difference between the dev and production settings in the Kubernetes cluster
 - Deploy new version of the app into production
 
-### Create Flux Source Git Repositories
+## Create Flux Source Git Repositories
 
 The Flux Source API defines a set of Kubernetes objects that cluster admins and various automated operators can interact with to offload the Git and Helm repositories operations to a dedicated controller.
 
