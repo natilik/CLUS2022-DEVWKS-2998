@@ -24,5 +24,5 @@ spec:
         name: chuck-norris-app
         imagePullPolicy: Always
         ports:
-        - containerPort: 5002
+        - containerPort: 8080
       restartPolicy: Always
