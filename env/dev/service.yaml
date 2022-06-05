@@ -5,7 +5,7 @@ metadata:
   namespace: dev
 spec:
   ports:
-  - port: 5002
+  - port: 8080
     protocol: TCP
   selector:
     app: chuck-norris-app
