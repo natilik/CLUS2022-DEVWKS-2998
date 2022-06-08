@@ -27,23 +27,28 @@ git clone https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$GITHUB_USER/chuck-norri
 ```yaml
 ├── README.md
 ├── chuck-norris-app-src
-│   ├── Dockerfile
-│   ├── app.yaml
-│   ├── main.py
-│   ├── requirements.txt
-│   ├── static
-│   │   └── img
-│   │       └── up.png
-│   └── templates
-│       ├── chuck.html
-│       └── norris.html
-└── env
-    ├── dev
-    │   ├── deployment.yaml
-    │   └── service.yaml
-    └── prod
-        ├── deployment.yaml
-        └── service.yaml
+│   ├── Dockerfile
+│   ├── app.yaml
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── static
+│   │   └── img
+│   │       └── up.png
+│   └── templates
+│       ├── chuck.html
+│       └── norris.html
+├── env
+│   └── prod
+│       ├── deployment.yaml
+│       └── service.yaml
+└── workshop
+    ├── 01-introduction.md
+    ├── 02-create-flux-git-repos.md
+    ├── 03-create-flux-kustomization.md
+    ├── 04-deploy-chuck-norris-app-v2.md
+    └── images
+        ├── chuck-norris-app-v1.png
+        └── chuck-norris-app-v2.png
 ```
 
 Run command `git branch -r` in the repository `chuck-norris-app-clus2022` to see that we have two branches - `main` and `dev`. This will be important to know for our next steps.
