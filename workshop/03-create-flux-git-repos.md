@@ -53,8 +53,8 @@ Run command `git branch -r` in the repository `CLUS2022-DEVWKS-2998` to see that
 
 After you will fork the repository run the following command to create configuration for our `dev` environment:
 ```bash
-mkdir /root/natilik-fleet/clusters/clus2022/apps
-cd /root/natilik-fleet/clusters/clus2022
+mkdir /home/developer/src/natilik-fleet/clusters/clus2022/apps
+cd /home/developer/src/natilik-fleet/clusters/clus2022
 flux create source git dev \
 --url https://github.com/$GITHUB_USER/CLUS2022-DEVWKS-2998.git \
 --branch dev \

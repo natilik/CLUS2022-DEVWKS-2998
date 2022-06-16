@@ -76,7 +76,7 @@ tree /home/developer/src/natilik-fleet
 ```
 
 ```
-/root/natilik-fleet
+/home/developer/natilik-fleet
 └── clusters
     └── clus2022
         ├── apps
