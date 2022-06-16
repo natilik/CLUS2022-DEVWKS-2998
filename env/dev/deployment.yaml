@@ -20,7 +20,7 @@ spec:
         app: chuck-norris-app
     spec:
       containers:
-      - image: maty0609/clus2022-chuck-app:v2
+      - image: maty0609/clus2022-chuck-app:v1
         name: chuck-norris-app
         imagePullPolicy: Always
         ports:
