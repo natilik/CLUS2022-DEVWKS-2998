@@ -14,12 +14,12 @@ You are going to create 2 Flux Source Repositories: one for `dev` environment an
 Let's start with forking application repository `https://github.com/natilik/CLUS2022-DEVWKS-2998.git`. This repository will represents our application.
 
 ```bash
-cd /root
+cd /home/developer/src
 git clone https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$GITHUB_USER/CLUS2022-DEVWKS-2998.git
 ```
 
 ```bash
-tree /root/CLUS2022-DEVWKS-2998
+tree /home/developer/src/CLUS2022-DEVWKS-2998
 ```
 
 ```

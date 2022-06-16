@@ -72,7 +72,7 @@ spec:
 
 Let’s check `natilik-fleet` repository structure:
 ```bash
-tree /root/natilik-fleet
+tree /home/developer/src/natilik-fleet
 ```
 
 ```
@@ -142,17 +142,30 @@ NAME                                READY   STATUS    RESTARTS   AGE
 chuck-norris-app-79fdbc9769-fhrnd   1/1     Running   0          10m
 ```
 
+We will be accessing Chuck Norris App via proxy. You will be able to access both services via these two links:
+
+![Untitled](./images/devnet-proxy.png)
+
+Before we will validate Consul and Grafana let's make sure Caddy is running.
+```bash
+cd /home/developer/src
+caddy stop
+caddy run
+```
+
 Now, let's check that the application is working. Open two new tabs. In the first tab run:
 ```bash
 kubectl port-forward service/chuck-norris-app 8090:8080 -n prod
 ```
+Open Chuck Norris App in `prod` environment via the first link. Link should be something like this: `https://app-8080-xxxx.devenv-testing.ap-ne-1.devnetcloud.com`.
 
 In the second tab run:
 ```bash
 kubectl port-forward service/chuck-norris-app 8091:8080 -n dev
 ```
+Open Chuck Norris App Version in `dev` environment via the second link. Link should be something like this: `https://app-8081-xxxx.devenv-testing.ap-ne-1.devnetcloud.com`.
 
-Now when you will access on your laptop port `8080` and `8081` you should see this:
+In both cases you should see this:
 
 ![Untitled](./images/chuck-norris-app-v1.png)
 

@@ -5,6 +5,34 @@ In the first part of our workshop we will be doing following tasks:
 - Create GitHub Token
 - Bootstrap Flux
 
+## Before we start
+Create Caddy configuration:
+```bash
+cat > Caddyfile <<EOF
+:8080 {
+
+    @8090 {
+        path /*
+    }
+
+    reverse_proxy @8090 127.0.0.1:8090
+
+
+}
+
+:8081 {
+
+    @8091 {
+        path /*
+    }
+
+    reverse_proxy @8091 127.0.0.1:8091
+
+
+}
+EOF
+```
+
 ## Flux pre-requirements
 We have pre-built Kubernetes cluster for you. It is standard `kind` (Kubernetes in Docker) cluster.
 
@@ -123,17 +151,17 @@ source-controller-67df67fc7-hkg85         1/1     Running   0          60s
 
 Let's clone our new repo so we can work locally:
 ```bash
-cd /root
+cd /home/developer/src
 git clone https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$GITHUB_USER/natilik-fleet
 ```
 
 After it will be downloaded let's check what's the structure of the repository:
 ```bash
-tree /root/natilik-fleet/
+tree /home/developer/src/natilik-fleet/
 ```
 
 ```
-/root/natilik-fleet/
+/home/developer/src/natilik-fleet/
 └── clusters
     └── clus2022
         └── flux-system

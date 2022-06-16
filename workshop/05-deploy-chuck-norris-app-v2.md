@@ -10,7 +10,7 @@ Let’s assume your developers would like to deploy new version of Chuck Norris 
 Now let’s deploy the new version in the real GitOps fashion. We don’t want to deploy version 2 straight into production so we will want to deploy new version in `dev` environment first. Let’s go into our Chuck Norris app repository and switch to `dev` branch.
 
 ```bash
-cd /root/CLUS2022-DEVWKS-2998
+cd /home/developer/src/CLUS2022-DEVWKS-2998
 git checkout dev
 ```
 
@@ -59,7 +59,7 @@ After the cluster has been reconciled we can check the new version running in `d
 Everything looks great in `dev` environment so let’s change it in `prod` as well. We will change image name in the file `./app/prod.yaml`
 
 ```bash
-cd /root/CLUS2022-DEVWKS-2998
+cd /home/developer/src/CLUS2022-DEVWKS-2998
 git checkout main
 ```
 
